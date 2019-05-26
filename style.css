@@ -1,0 +1,42 @@
+
+
+/**
+	* Add box sizing to everything
+	* @link http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+	*/
+/* line 7, src/sass/components/_normalize.scss */
+		*,
+		*:before,
+		*:after {
+			box-sizing: border-box;
+      border: 1px solid magenta;
+		}
+
+body {
+    background: lightgray;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+h1, h2 {
+  font-family: Lato;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: lightslategray;
+  width: 100%;
+  padding: 10px;
+
+}
