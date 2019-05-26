@@ -14,6 +14,7 @@
 
 body {
     background: lightgray;
+    font-family: 'Cantarell', sans-serif;
 }
 
 .wrapper {
@@ -24,15 +25,27 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, minmax(150px, 1fr));
   grid-gap: 10px;
+
+}
+
+.grid >  div {
+  background: url(https://raw.githubusercontent.com/diomededavid/monsters/master/images/door.png.png) no-repeat center;
+  background-size: contain;
+  text-align: center;
+  padding: 20px 0 0 0;
+  color: darkgoldenrod;
+  font-weight: 400;
 }
 
 h1, h2 {
-  font-family: Lato;
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
 }
+
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   background: lightslategray;
